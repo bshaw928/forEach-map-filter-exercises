@@ -49,7 +49,6 @@ function vowelCount(str) {
     let lowerCasedLetter = val.toLowerCase();
     // if letter is in vowels
     if (vowels.indexOf(lowerCasedLetter) !== -1) {
-      // next part taken from solution code, I don't understand it and will go over it with mentor or TA:
       if (object[lowerCasedLetter]) {
         object[lowerCasedLetter]++;
       } else {
@@ -69,12 +68,6 @@ function doubleValuesWithMap(arr) {
   });
   return newArr;
 }
-//solution code:
-// function doubleValuesWithMap(arr) {
-//     return arr.map(function(val) {
-//       return val * 2;
-//     });
-//   }
 
 //7. Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.
 function valTimesIndex(arr) {
@@ -111,7 +104,6 @@ function filterByValue(arr, key) {
 function find(arr, searchValue) {
   return arr.filter(function (val) {
     return val === searchValue;
-    // what is the [0] for ???
   })[0];
 }
 
